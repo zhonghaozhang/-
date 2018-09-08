@@ -1,0 +1,63 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+  <view class="wrap">
+  <view class="numberWrap">
+    <view class='number' bindtap='addNum' data-num='{{item}}' wx:for="{{[0,1,2]}}" wx:key="item">
+      {{item}}
+    </view>
+  </view>
+    <view class="numberWrap">
+      <view class='number' bindtap='addNum' data-num='{{item}}' wx:for="{{[3,4,5]}}" wx:key="item">
+      {{item}}
+      </view> 
+    </view>
+    <view class="numberWrap">
+      <view class='number' bindtap='addNum' data-num='{{item}}' wx:for="{{[6,7,8,9]}}" wx:key="item">
+      {{item}}
+      </view>
+    </view>
+    
+
+  </view>
+
+  <view class="computeWrap">
+    <view class="compute" bindtap='isAdd' data-flag='+'>+</view>
+    <view class="compute" bindtap='isAdd' data-flag='-'>-</view>
+    <view class="compute" bindtap='isAdd' data-flag='*'>*</view>
+    <view class="compute" bindtap='isAdd' data-flag='/'>/</view>
+    <view class="compute" bindtap='compute' data-flag='='>=</view>
+  </view>
+
+  <!-- 显示选择数字内容 -->
+  <view class="count">
+    <text>已选择数字
+    </text>
+    <view style='word-break:break-all'>
+    <text class="text" wx:for="{{count}}" wx:key="index">{{item}}</text>
+    <text>{{flag}}</text>
+
+    <text wx:for="{{count2}}" wx:key="index">{{item}}</text>
+    </view>
+    
+    <text>
+      结果
+    </text>
+    <view>
+    <text>
+      {{total}}
+    </text>
+    </view>
+    
+  </view>
+  
+</view>
