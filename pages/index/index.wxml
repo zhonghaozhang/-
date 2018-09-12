@@ -40,7 +40,7 @@
 
   <!-- 显示选择数字内容 -->
   <view class="count">
-    <text>已选择数字
+    <text>表达式区域
     </text>
     <view style='word-break:break-all'>
     <text class="text" wx:for="{{count}}" wx:key="index">{{item}}</text>
