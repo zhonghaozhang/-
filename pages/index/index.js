@@ -32,12 +32,13 @@ Page({
     
     }
     if (this.data.isa == 1) { // 判断是计算符号前 还是计算后 数值增加 
-      console.log(e.currentTarget.dataset.num)
+      console.log(e.currentTarget.dataset.num)//打印传递的参数
       console.log(this.data)
       console.log(this.data.count)
       var length = this.data.count.length
       this.data.count[length] = e.currentTarget.dataset.num
       var arr = []
+      //由于小程序 没有push操作 所以通过遍历存放
       for (var i = 0; i < this.data.count.length; i++) {
         arr[i] = this.data.count[i]
       }

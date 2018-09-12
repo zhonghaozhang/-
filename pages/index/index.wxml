@@ -19,7 +19,7 @@
     <view class="numberWrap">
       <view class='number' bindtap='addNum' data-num='{{item}}' wx:for="{{[3,4,5]}}" wx:key="item">
       {{item}}
-      </view> 
+      </view>
     </view>
     <view class="numberWrap">
       <view class='number' bindtap='addNum' data-num='{{item}}' wx:for="{{[6,7,8,9]}}" wx:key="item">
@@ -40,7 +40,7 @@
 
   <!-- 显示选择数字内容 -->
   <view class="count">
-    <text>已选择数字
+    <text>表达式区域
     </text>
     <view style='word-break:break-all'>
     <text class="text" wx:for="{{count}}" wx:key="index">{{item}}</text>
