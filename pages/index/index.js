@@ -38,6 +38,7 @@ Page({
       var length = this.data.count.length
       this.data.count[length] = e.currentTarget.dataset.num
       var arr = []
+      //由于小程序 没有push操作 所以通过遍历存放
       for (var i = 0; i < this.data.count.length; i++) {
         arr[i] = this.data.count[i]
       }
