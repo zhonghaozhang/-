@@ -32,7 +32,7 @@ Page({
     
     }
     if (this.data.isa == 1) { // 判断是计算符号前 还是计算后 数值增加 
-      console.log(e.currentTarget.dataset.num)
+      console.log(e.currentTarget.dataset.num)//打印传递的参数
       console.log(this.data)
       console.log(this.data.count)
       var length = this.data.count.length

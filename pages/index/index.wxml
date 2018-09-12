@@ -19,7 +19,7 @@
     <view class="numberWrap">
       <view class='number' bindtap='addNum' data-num='{{item}}' wx:for="{{[3,4,5]}}" wx:key="item">
       {{item}}
-      </view> 
+      </view>
     </view>
     <view class="numberWrap">
       <view class='number' bindtap='addNum' data-num='{{item}}' wx:for="{{[6,7,8,9]}}" wx:key="item">
